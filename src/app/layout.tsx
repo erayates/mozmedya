@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/ui/header";
+import Header from "./components/header";
 
 const beausiteClassic = localFont({
   src: [
@@ -38,10 +38,8 @@ export default function RootLayout({
       <body
         className={`${beausiteClassic.className} antialiased bg-bgGradient`}
       >
-        <main className="w-full mx-auto">
-          <Header />
-        </main>
-        {children}
+        <Header />
+        <main className="w-full mx-auto">{children}</main>
       </body>
     </html>
   );

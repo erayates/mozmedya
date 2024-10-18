@@ -18,6 +18,8 @@ const config: Config = {
         },
         secondary: "var(--secondary)",
         ghost: "var(--ghost)",
+        "light-accent": "var(--light-accent)",
+        accent: "var(--accent)",
       },
       backgroundImage: {
         bgGradient: "linear-gradient(180deg, #F5F7FA 0%, #FFFFFF 100%)",
@@ -33,11 +35,16 @@ const config: Config = {
         heroGradient:
           "linear-gradient(239.78deg, #148DFB 4.19%, #002F88 91.75%)",
       },
+      boxShadow: {
+        "promote-cards":
+          "0px 32px 120px 0px #143B810A, 0px 6px 56px 0px #143B810A",
+      },
       fontSize: {
         xs: "14px",
         sm: "16px",
         md: "18px",
         lg: "20px",
+        xlg: "32px",
         xl: "40px",
         "2xl": "48px",
       },

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, ArrowRightRound } from "../icons/arrow-right";
 import Image from "next/image";
+import { ArrowRight, ArrowRightRound } from "./icons/arrow-right";
 
 interface INavLinkItem {
   href: string;
@@ -29,7 +29,7 @@ const navLinks: INavLinkItem[] = [
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 left-0 z-50 bg-white shadow-xl">
       <div className="max-w-screen-xl mx-auto flex items-center justify-center space-x-6 text-xs leading-8">
         <p className="text-primary font-medium">
           Özel ihtiyaçlarınız için özel çözümler: Sizin için yazılımı

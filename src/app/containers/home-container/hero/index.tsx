@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
                 as="p"
                 className="font-normal leading-7"
                 text="  Haberler artık sadece bilgi akışı değil, aynı zamanda etkileme
-                ve dönüştürme aracı haline geliyor. <br /> Moz Haber Yazılımı
+                ve dönüştürme aracı haline geliyor. <br/> Moz Haber Yazılımı
                 v1, güçlü araçları ve kullanıcı dostu arayüzüyle haber
                 deneyiminizi zirveye taşıyor."
               />
