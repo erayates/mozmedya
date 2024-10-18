@@ -5,6 +5,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #00184C;
+  --primary-dark: #090E24;
+  --primary-light: #3B4767;
+  --secondary: #626C85;
+  --ghost: #D6DAE9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,9 +20,13 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+.hero-clip-path{
+  clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 70%, 60% 100%, 40% 100%, 0% 70%, 0 0);
 }
 
 @layer utilities {

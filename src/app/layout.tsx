@@ -1,16 +1,26 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./components/ui/header";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const beausiteClassic = localFont({
+  src: [
+    {
+      path: "./fonts/BeausiteClassicSemibold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/BeausiteClassicMedium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/BeausiteClassicRegular.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -26,8 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${beausiteClassic.className} antialiased bg-bgGradient`}
       >
+        <main className="w-full mx-auto">
+          <Header />
+        </main>
         {children}
       </body>
     </html>
