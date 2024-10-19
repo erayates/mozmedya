@@ -10,12 +10,8 @@ const WhyChooseUs: React.FC = () => {
   return (
     <section
       id="why-choose-us"
-      className="max-w-screen-xl mx-auto py-14 px-10 mt-[120px] rounded-[40px] relative"
+      className="max-w-screen-xl mx-auto py-14 px-10 mt-[120px] rounded-[40px] relative bg-whyMozBg bg-cover"
     >
-      <div className="absolute inset-0 left-0 top-0">
-        <ChooseBackground />
-      </div>
-
       <div className="space-y-12">
         <Grow duration={1}>
           <SectionHeader

@@ -34,7 +34,9 @@ const config: Config = {
         titleGradient:
           "linear-gradient(239.78deg, #148DFB 4.19%, #002F88 91.75%)",
         heroPattern: "url('/assets/images/hero/clip-path.svg')",
-        focusTabBg: "linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%)",
+        focusTabBg:
+          "linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%)",
+        whyMozBg: "url('/assets/images/focus/why-moz-bg.svg')",
         heroGradient:
           "linear-gradient(239.78deg, #148DFB 4.19%, #002F88 91.75%)",
         whiteGradient:
