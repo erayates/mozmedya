@@ -8,8 +8,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-import { motion, useScroll } from "framer-motion";
-
 const TabContent: React.FC<{
   isActive: boolean;
   children: React.ReactNode;

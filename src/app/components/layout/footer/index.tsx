@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Facebook, Instagram, LinkedIn, Twitter } from "../../icons/social";
 import { Location, Mail, Phone } from "../../icons/footer";
 import { footerLinks, socialLinks } from "./config";
 import SectionHeader from "../../section-header";
@@ -74,6 +73,7 @@ const Footer: React.FC = () => {
               <div className="flex space-x-2">
                 {socialLinks.map((link, _idx) => (
                   <Link
+                    key={_idx}
                     href={link.href}
                     className="w-10 h-10 rounded-2xl grid place-items-center bg-cream hover:bg-textGradient hover:text-white"
                   >

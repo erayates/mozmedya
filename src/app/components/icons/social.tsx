@@ -43,6 +43,7 @@ export function Instagram({ ...props }: React.SVGProps<SVGSVGElement>) {
       height="18"
       viewBox="0 0 18 18"
       fill="currentColor"
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -63,6 +64,7 @@ export function LinkedIn({ ...props }: React.SVGProps<SVGSVGElement>) {
       viewBox="0 0 18 18"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         fill-rule="evenodd"

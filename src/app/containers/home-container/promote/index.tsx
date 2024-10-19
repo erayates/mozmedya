@@ -65,7 +65,7 @@ const Promote: React.FC = () => {
               </div>
             ))}
 
-            <Reveal>
+            <Reveal className="h-full">
               <div className="space-y-6 w-full h-full border-r flex items-center justify-center flex-col border-t border-accent">
                 <MozIcon />
                 <h3 className="font-semibold text-md text-primary">

@@ -31,6 +31,7 @@ const WhyChooseUs: React.FC = () => {
         <div className="grid grid-cols-6 gap-8">
           {chooseCards.map((card: IChooseCard, _idx: number) => (
             <div
+              key={_idx}
               className={cn(
                 "p-8 col-span-2 border-2 border-white rounded-3xl bg-[rgba(255,255,255,0.3)] backdrop-blur-xl flex flex-col items-center space-y-2",
                 card.className && card.className

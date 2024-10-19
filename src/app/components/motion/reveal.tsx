@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 interface Props {
   children: React.ReactNode;
   width?: "fit-content" | "100%";
   duration?: number;
   axis?: "x" | "y";
+  className?: string;
 }
 
 export const Reveal = ({
@@ -15,6 +16,7 @@ export const Reveal = ({
   width = "100%",
   duration = 1.5,
   axis = "y",
+  className = "",
 }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -36,6 +38,7 @@ export const Reveal = ({
         }}
         initial="hidden"
         animate={mainControls}
+        className={className}
         transition={{ duration: duration, delay: 0.25 }}
       >
         {children}
