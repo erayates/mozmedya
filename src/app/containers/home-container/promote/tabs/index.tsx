@@ -30,13 +30,13 @@ const TabInnerContent: React.FC<{
   description: string;
 }> = ({ subtitle, title, description }) => {
   return (
-    <div className="space-y-8 flex-1">
+    <div className="space-y-8 flex-1 -left-12 relative">
       <div className="space-y-4">
-        <p className="text-gradient font-medium text-xs">{subtitle}</p>
+        <p className="text-gradient font-bold text-xs">{subtitle}</p>
         <h3 className="text-primary text-xlg font-semibold leading-10">
           {title}
         </h3>
-        <p className="text-secondary leading-7">{description}</p>
+        <p className="text-secondary font-medium leading-7">{description}</p>
       </div>
 
       <div className="space-x-4">
@@ -59,13 +59,15 @@ const TabInnerContent: React.FC<{
 
 const MobileTab: React.FC = () => {
   return (
-    <div className="w-full flex flex-1 items-center">
-      <div className="relative flex-1 flex-grow bg-promoteTabEffect bg-cover bg-no-repeat bg-center w-[700px] h-[525px]">
+    <div className="w-full flex flex-1 items-center space-x-16">
+      <div className="relative flex-1 flex-grow max-w-[766px] max-h-[575px]">
         <Image
-          src="/assets/images/promote/iphone.png"
-          fill
-          className="object-cover object-center"
-          alt="Yüksek Hız ve Performans"
+          src="/assets/images/promote/iphone-bg.png"
+          alt="Mozmedya ile müşteri memnuniyeti en üst düzeyde!"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
         />
       </div>
       <TabInnerContent
@@ -83,13 +85,15 @@ const MobileTab: React.FC = () => {
 
 const PerformanceTab: React.FC = () => {
   return (
-    <div className="w-full flex items-center">
-      <div className="relative bg-promoteTabEffect bg-cover bg-center w-[766px] h-[525px]">
+    <div className="w-full flex items-center space-x-16">
+      <div className="relative flex-1 flex-grow max-w-[766px] max-h-[575px]">
         <Image
-          src="/assets/images/promote/iphone.png"
-          fill
-          className="object-contain object-center"
-          alt="Yüksek Hız ve Performans"
+          src="/assets/images/promote/iphone-bg.png"
+          alt="Mozmedya ile müşteri memnuniyeti en üst düzeyde!"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
         />
       </div>
 
@@ -105,14 +109,15 @@ const PerformanceTab: React.FC = () => {
 
 const ThemeTab: React.FC = () => {
   return (
-    <div className="w-full flex items-center">
-      <div className="relative p-16 max-w-[650px]">
+    <div className="w-full flex items-center space-x-16">
+      <div className="relative flex-1 flex-grow max-w-[766px] max-h-[575px]">
         <Image
-          src="/assets/images/promote/iphone.png"
-          width={766}
-          height={525}
-          className="object-contain object-center"
-          alt="Yüksek Hız ve Performans"
+          src="/assets/images/promote/iphone-bg.png"
+          alt="Mozmedya ile müşteri memnuniyeti en üst düzeyde!"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
         />
       </div>
 
@@ -136,7 +141,7 @@ const Tabs: React.FC = () => {
 
   return (
     <div className="relative w-full flex flex-col items-center justify-center">
-      <div className="bg-light-accent flex space-x-2 w-fit p-2 rounded-2xl">
+      <div className="bg-light-accent flex space-x-2 w-fit p-2 rounded-2xl z-20">
         <button
           className={cn(
             buttonClasses,
@@ -169,7 +174,7 @@ const Tabs: React.FC = () => {
         </button>
       </div>
 
-      <div className="w-full relative h-[600px] overflow-hidden">
+      <div className="w-full relative h-[600px] overflow-hidden -mt-12">
         <TabContent isActive={currentTab === "mobile"}>
           <MobileTab />
         </TabContent>

@@ -23,7 +23,7 @@ const Focus: React.FC = () => {
                     <Elements className="group-hover:hidden" />
                     <ElementsWhite className="hidden group-hover:flex" />
                   </div>
-                  <h3 className="text-md text-primary leading-6 font-semibold">
+                  <h3 className="text-md text-primary leading-6 font-bold">
                     Gelişmiş Eklenti Sistemi
                   </h3>
                 </div>
@@ -44,7 +44,7 @@ const Focus: React.FC = () => {
                     <Elements className="group-hover:hidden" />
                     <ElementsWhite className="hidden group-hover:flex" />
                   </div>
-                  <h3 className="text-md text-primary leading-6 font-semibold">
+                  <h3 className="text-md text-primary leading-6 font-bold">
                     Gelişmiş Eklenti Sistemi
                   </h3>
                 </div>
@@ -65,7 +65,7 @@ const Focus: React.FC = () => {
                     <Elements className="group-hover:hidden" />
                     <ElementsWhite className="hidden group-hover:flex" />
                   </div>
-                  <h3 className="text-md text-primary leading-6 font-semibold">
+                  <h3 className="text-md text-primary leading-6 font-bold">
                     Gelişmiş Eklenti Sistemi
                   </h3>
                 </div>
@@ -86,7 +86,7 @@ const Focus: React.FC = () => {
                     <Elements className="group-hover:hidden" />
                     <ElementsWhite className="hidden group-hover:flex" />
                   </div>
-                  <h3 className="text-md text-primary leading-6 font-semibold">
+                  <h3 className="text-md text-primary leading-6 font-bold">
                     Gelişmiş Eklenti Sistemi
                   </h3>
                 </div>
@@ -102,9 +102,13 @@ const Focus: React.FC = () => {
           </div>
         </div>
       </Reveal>
-      <AdminPanelShape />
-    </section>
+
+      <div className="w-full h-[430px] bg-focusTabBg rounded-3xl">
+        <div className="h-full max-w-[872px] relative">
+          <AdminPanelShape />
+        </div>
+      </div>
+    </section>  
   );
 };
-
 export default Focus;

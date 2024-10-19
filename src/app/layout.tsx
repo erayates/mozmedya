@@ -21,6 +21,11 @@ const beausiteClassic = localFont({
       weight: "400",
       style: "normal",
     },
+    {
+      path: "./fonts/BeausiteClassicBold.ttf",
+      weight: "700",
+      style: "normal",
+    },
   ],
 });
 

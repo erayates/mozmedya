@@ -33,7 +33,7 @@ const WhyChooseUs: React.FC = () => {
             <div
               key={_idx}
               className={cn(
-                "p-8 col-span-2 border-2 border-white rounded-3xl bg-[rgba(255,255,255,0.3)] backdrop-blur-xl flex flex-col items-center space-y-2",
+                "p-8 col-span-2 border-2 border-white rounded-3xl bg-[rgba(255,255,255,0.3)] backdrop-blur-xl flex flex-col items-center",
                 card.className && card.className
               )}
             >
@@ -43,11 +43,11 @@ const WhyChooseUs: React.FC = () => {
               >
                 <div className="flex flex-col items-center space-y-4">
                   <Elements />
-                  <h3 className="text-md text-primary leading-6 font-semibold">
+                  <h3 className="text-md text-primary leading-6 font-bold">
                     {card.title}
                   </h3>
                 </div>
-                <p className="text-secondary font-medium text-xs">
+                <p className="text-secondary font-normal leading-6 text-xs mt-2">
                   {card.description}
                 </p>
               </Reveal>

@@ -33,7 +33,8 @@ const config: Config = {
           "linear-gradient(62.82deg, #07DEFD 0.95%, #1476FB 93.47%)",
         titleGradient:
           "linear-gradient(239.78deg, #148DFB 4.19%, #002F88 91.75%)",
-        heroPattern: "url('/assets/images/hero/clip-path.png')",
+        heroPattern: "url('/assets/images/hero/clip-path.svg')",
+        focusTabBg: "linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%)",
         heroGradient:
           "linear-gradient(239.78deg, #148DFB 4.19%, #002F88 91.75%)",
         whiteGradient:

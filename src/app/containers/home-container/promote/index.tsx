@@ -45,7 +45,7 @@ const Promote: React.FC = () => {
             {promoteCards.map((card: IPromoteCard, _idx: number) => (
               <div
                 className={cn(
-                  "space-y-2 pl-10 pt-14 pb-10 pr-8 border-r border-accent",
+                  "pl-10 pt-14 pb-10 pr-8 border-r border-accent",
                   card.className && card.className
                 )}
                 key={_idx}
@@ -53,11 +53,11 @@ const Promote: React.FC = () => {
                 <Grow duration={_idx / 5}>
                   <div className="space-y-4">
                     <Elements />
-                    <h3 className="font-semibold text-md text-primary">
+                    <h3 className="font-bold text-md leading-6 text-primary">
                       Gelişmiş Eklenti Sistemi
                     </h3>
                   </div>
-                  <p className="text-secondary text-xs leading-6">
+                  <p className="text-secondary text-xs leading-6 mt-2">
                     Lorem ipsum dolor sit amet, ectetur adipiscing elit.
                     Phasellus sed massa tristique, luctus sem.
                   </p>
@@ -73,9 +73,9 @@ const Promote: React.FC = () => {
                 </h3>
                 <Link
                   href="#"
-                  className="bg-buttonGradient py-3 px-4 rounded-2xl text-white text-xs"
+                  className="bg-buttonGradient py-3 px-4 rounded-3xl text-white text-xs"
                 >
-                  Tüm Özellikleri Gör
+                  Tüm özellikleri gör
                 </Link>
               </div>
             </Reveal>

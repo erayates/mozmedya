@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            <div className="absolute -right-24 max-w-[721px] max-h-[541px]">
+            <div className="absolute -right-40 max-w-[721px] max-h-[541px]">
               <Image
                 src="/assets/images/devices-mockup.png"
                 alt="Mozmedya Tüm Akıllı Cihazlarda"
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             {/* Quick Links - Contact */}
             <div className="flex space-x-24">
               <div className="space-y-4 max-w-[420px]">
-                <p className="font-semibold text-md text-primary">
+                <p className="font-bold text-md text-primary">
                   Bize Ulaşın
                 </p>
                 <ul className="flex flex-col space-y-2 text-primary">
@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
                     key={section}
                     className="flex flex-col text-primary min-w-fit"
                   >
-                    <p className="font-semibold text-md mb-4">{section}</p>
+                    <p className="font-bold text-md mb-4">{section}</p>
                     {links.map((link, index) => (
                       <li key={index}>
                         <Link

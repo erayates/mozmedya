@@ -19,7 +19,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 }) => {
   return (
     <div className={cn("space-y-4 text-center", className && className)}>
-      <p className="text-gradient text-xs font-semibold">{subtitle}</p>
+      <p className="text-gradient text-xs font-bold">{subtitle}</p>
       <h2
         className={cn(
           "text-xl text-primary font-semibold leading-[48px]",
@@ -30,7 +30,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
       </h2>
       <p
         className={cn(
-          "text-secondary text-md font-medium",
+          "text-secondary text-md font-medium leading-8",
           smallDescription && "text-sm"
         )}
         dangerouslySetInnerHTML={{
