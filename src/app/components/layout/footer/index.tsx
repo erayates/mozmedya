@@ -27,10 +27,10 @@ const Footer: React.FC = () => {
               </div>
 
               <div className="space-x-4">
-                <button className="bg-buttonGradient text-xs text-white py-3 px-4 rounded-2xl font-semibold">
+                <button className="bg-buttonGradient text-xs text-white py-3 px-8 rounded-2xl font-normal leading-6">
                   Hemen Satın Al
                 </button>
-                <button className="bg-white text-xs py-3 px-4 font-semibold border border-ghost rounded-2xl">
+                <button className="bg-white text-xs py-3 px-4 font-semibold border border-ghost rounded-2xl leading-6">
                   Demo Talebi Oluştur
                 </button>
               </div>
