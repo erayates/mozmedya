@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/header";
+import Header from "./components/layout/header";
+import Footer from "./components/layout/footer";
 
 const beausiteClassic = localFont({
   src: [
     {
-      path: "./fonts/BeausiteClassicSemibold.otf",
+      path: "./fonts/BeausiteClassicSemibold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "./fonts/BeausiteClassicMedium.otf",
+      path: "./fonts/BeausiteClassicMedium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "./fonts/BeausiteClassicRegular.otf",
+      path: "./fonts/BeausiteClassicRegular.ttf",
       weight: "400",
       style: "normal",
     },
@@ -40,6 +41,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="w-full mx-auto">{children}</main>
+        <Footer />
       </body>
     </html>
   );

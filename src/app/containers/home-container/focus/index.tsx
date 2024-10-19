@@ -1,0 +1,110 @@
+import { Elements, ElementsWhite } from "@/app/components/icons/elements";
+import { Grow } from "@/app/components/motion/grow";
+import { Reveal } from "@/app/components/motion/reveal";
+import SectionHeader from "@/app/components/section-header";
+import { AdminPanelShape } from "@/app/components/shapes/admin-panel";
+
+const Focus: React.FC = () => {
+  return (
+    <section id="focus" className="max-w-screen-xl mx-auto mt-[120px]">
+      <Reveal axis="x">
+        <div className="space-y-12">
+          <SectionHeader
+            subtitle="HABER YAZILIMI DENEYİMİNİZİ YENİDEN TANIMLIYORUZ!"
+            title="Tamamen işinize odaklanın, gerisini bize bırakın!"
+            description="Yenilenen alt yapı sayesinde, işinizdeki potansiyeli tam anlamıyla keşfedin ve güncel kalmanın yanı sıra güvenli bir <br/> şekilde yol alın. Artık sadece işinize odaklanın, çünkü geliştirilmiş alt yapı sayesinde tüm detayları biz yönetiyoruz."
+          />
+
+          <div className="grid grid-cols-4 gap-8">
+            <Grow duration={0.5}>
+              <div className="flex flex-col items-center space-y-2 group text-center">
+                <div className="space-y-4 flex flex-col items-center">
+                  <div className="bg-buttonHoverGradient group-hover:bg-textGradient rounded-2xl flex items-center justify-center w-12 h-12 p-3">
+                    <Elements className="group-hover:hidden" />
+                    <ElementsWhite className="hidden group-hover:flex" />
+                  </div>
+                  <h3 className="text-md leading-6 font-semibold">
+                    Gelişmiş Eklenti Sistemi
+                  </h3>
+                </div>
+
+                <p className="text-xs text-secondary pb-6">
+                  Lorem ipsum dolor sit amet, ectetur elit. Phasellus sed massa
+                  tristique, luctus sem.
+                </p>
+
+                <div className="bg-textGradient h-[3px] w-full opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"></div>
+              </div>
+            </Grow>
+
+            <Grow duration={0.7}>
+              <div className="flex flex-col items-center space-y-2 group text-center">
+                <div className="space-y-4 flex flex-col items-center">
+                  <div className="bg-buttonHoverGradient group-hover:bg-textGradient rounded-2xl flex items-center justify-center w-12 h-12 p-3">
+                    <Elements className="group-hover:hidden" />
+                    <ElementsWhite className="hidden group-hover:flex" />
+                  </div>
+                  <h3 className="text-md leading-6 font-semibold">
+                    Gelişmiş Eklenti Sistemi
+                  </h3>
+                </div>
+
+                <p className="text-xs text-secondary pb-6">
+                  Lorem ipsum dolor sit amet, ectetur elit. Phasellus sed massa
+                  tristique, luctus sem.
+                </p>
+
+                <div className="bg-textGradient h-[3px] w-full opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"></div>
+              </div>
+            </Grow>
+
+            <Grow duration={1}>
+              <div className="flex flex-col items-center space-y-2 group text-center">
+                <div className="space-y-4 flex flex-col items-center">
+                  <div className="bg-buttonHoverGradient group-hover:bg-textGradient rounded-2xl flex items-center justify-center w-12 h-12 p-3">
+                    <Elements className="group-hover:hidden" />
+                    <ElementsWhite className="hidden group-hover:flex" />
+                  </div>
+                  <h3 className="text-md leading-6 font-semibold">
+                    Gelişmiş Eklenti Sistemi
+                  </h3>
+                </div>
+
+                <p className="text-xs text-secondary pb-6">
+                  Lorem ipsum dolor sit amet, ectetur elit. Phasellus sed massa
+                  tristique, luctus sem.
+                </p>
+
+                <div className="bg-textGradient h-[3px] w-full opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"></div>
+              </div>
+            </Grow>
+
+            <Grow duration={1.2}>
+              <div className="flex flex-col items-center space-y-2 group text-center">
+                <div className="space-y-4 flex flex-col items-center">
+                  <div className="bg-buttonHoverGradient group-hover:bg-textGradient rounded-2xl flex items-center justify-center w-12 h-12 p-3">
+                    <Elements className="group-hover:hidden" />
+                    <ElementsWhite className="hidden group-hover:flex" />
+                  </div>
+                  <h3 className="text-md leading-6 font-semibold">
+                    Gelişmiş Eklenti Sistemi
+                  </h3>
+                </div>
+
+                <p className="text-xs text-secondary pb-6">
+                  Lorem ipsum dolor sit amet, ectetur elit. Phasellus sed massa
+                  tristique, luctus sem.
+                </p>
+
+                <div className="bg-textGradient h-[3px] w-full opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"></div>
+              </div>
+            </Grow>
+          </div>
+        </div>
+      </Reveal>
+      <AdminPanelShape />
+    </section>
+  );
+};
+
+export default Focus;

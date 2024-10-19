@@ -1,0 +1,61 @@
+import { Elements } from "@/app/components/icons/elements";
+import { chooseCards, IChooseCard } from "./config";
+import { cn } from "@/app/lib/utils";
+import SectionHeader from "@/app/components/section-header";
+import { ChooseBackground } from "@/app/components/shapes/choose-bg";
+import { Reveal } from "@/app/components/motion/reveal";
+import { Grow } from "@/app/components/motion/grow";
+
+const WhyChooseUs: React.FC = () => {
+  return (
+    <section
+      id="why-choose-us"
+      className="max-w-screen-xl mx-auto py-14 px-10 mt-[120px] rounded-[40px] relative"
+    >
+      <div className="absolute inset-0 left-0 top-0">
+        <ChooseBackground />
+      </div>
+
+      <div className="space-y-12">
+        <Grow duration={1}>
+          <SectionHeader
+            title="Sizin için profesyonel çözümler üretiyoruz!"
+            subtitle="NEDEN MOZMEDYA'YI TERCİH ETMELİSİNİZ?"
+            description=" Yenilenen alt yapı sayesinde, işinizdeki potansiyeli tam anlamıyla
+            keşfedin ve güncel kalmanın yanı sıra güvenli bir <br /> şekilde yol
+            alın. Artık sadece işinize odaklanın, çünkü geliştirilmiş alt yapı
+            sayesinde tüm detayları biz yönetiyoruz."
+          />
+        </Grow>
+
+        <div className="grid grid-cols-6 gap-8">
+          {chooseCards.map((card: IChooseCard, _idx: number) => (
+            <div
+              className={cn(
+                "p-8 col-span-2 border-2 border-white rounded-3xl bg-[rgba(255,255,255,0.3)] backdrop-blur-xl flex flex-col items-center space-y-2",
+                card.className && card.className
+              )}
+            >
+              <Reveal
+                axis={_idx % 2 === 0 ? "x" : "y"}
+                duration={_idx / 2 === 0 ? 0.5 : _idx / 2}
+              >
+                <div className="flex flex-col items-center space-y-4">
+                  <Elements />
+                  <h3 className="text-md text-primary leading-6 font-semibold">
+                    {card.title}
+                  </h3>
+                </div>
+                <p className="text-secondary font-medium text-xs">
+                  {card.description}
+                </p>
+              </Reveal>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyChooseUs;

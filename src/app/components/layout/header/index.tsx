@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, ArrowRightRound } from "./icons/arrow-right";
+import { ArrowRight, ArrowRightRound } from "../../icons/arrow-right";
 
 interface INavLinkItem {
   href: string;

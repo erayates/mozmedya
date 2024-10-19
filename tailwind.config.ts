@@ -20,6 +20,8 @@ const config: Config = {
         ghost: "var(--ghost)",
         "light-accent": "var(--light-accent)",
         accent: "var(--accent)",
+        "light-grey": "var-(--light-grey)",
+        cream: "var(--cream)",
       },
       backgroundImage: {
         bgGradient: "linear-gradient(180deg, #F5F7FA 0%, #FFFFFF 100%)",
@@ -34,6 +36,9 @@ const config: Config = {
         heroPattern: "url('/assets/images/hero/clip-path.png')",
         heroGradient:
           "linear-gradient(239.78deg, #148DFB 4.19%, #002F88 91.75%)",
+        whiteGradient:
+          "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 70.81%)",
+        promoteTabEffect: "url('/assets/images/promote/bg-effect.png')",
       },
       boxShadow: {
         "promote-cards":

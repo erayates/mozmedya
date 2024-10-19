@@ -10,6 +10,8 @@
   --ghost: #D6DAE9;
   --accent: #E3E7F1;
   --light-accent: #EDF1F8;
+  --light-grey: #D9D9D9;
+  --cream: #F5F7FA;
 }
 
 body {
@@ -20,12 +22,14 @@ body {
 }
 
 .hero-clip-path{
-  clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 70%, 60% 100%, 40% 100%, 0% 70%, 0 0);
+  clip-path: polygon(50% 91%, 100% 65%, 100% 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 50%);
+
 }
 
 .text-gradient{
   @apply bg-textGradient text-transparent bg-clip-text
 }
+
 
 @layer utilities {
   .text-balance {
