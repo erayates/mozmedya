@@ -2,7 +2,6 @@ import { Elements } from "@/app/components/icons/elements";
 import { chooseCards, IChooseCard } from "./config";
 import { cn } from "@/app/lib/utils";
 import SectionHeader from "@/app/components/section-header";
-import { ChooseBackground } from "@/app/components/shapes/choose-bg";
 import { Reveal } from "@/app/components/motion/reveal";
 import { Grow } from "@/app/components/motion/grow";
 
