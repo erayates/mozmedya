@@ -2,7 +2,7 @@ import { Elements, ElementsWhite } from "@/app/components/icons/elements";
 import { Grow } from "@/app/components/motion/grow";
 import { Reveal } from "@/app/components/motion/reveal";
 import SectionHeader from "@/app/components/section-header";
-import { AdminPanelShape } from "@/app/components/shapes/admin-panel";
+import Image from "next/image";
 
 const Focus: React.FC = () => {
   return (
@@ -103,12 +103,21 @@ const Focus: React.FC = () => {
         </div>
       </Reveal>
 
-      <div className="w-full h-[430px] bg-focusTabBg rounded-3xl">
-        <div className="h-full max-w-[872px] relative">
-          <AdminPanelShape />
+      <Reveal>
+        <div className="w-full h-[430px] bg-focusTabBg rounded-3xl relative">
+          <div className="h-[430px] w-[872px] absolute top-0 left-1/2 -translate-x-1/2">
+            <Image
+              src="/assets/images/focus/admin-panel.svg"
+              alt="Mozmedya Admin Paneli"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full"
+            />
+          </div>
         </div>
-      </div>
-    </section>  
+      </Reveal>
+    </section>
   );
 };
 export default Focus;
