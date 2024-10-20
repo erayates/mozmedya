@@ -25,9 +25,10 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
           "text-xl text-primary font-semibold leading-[48px]",
           largeTitle && "text-2xl"
         )}
-      >
-        {title}
-      </h2>
+        dangerouslySetInnerHTML={{
+          __html: title.replace(/\n/g, "<br/>"),
+        }}
+      />
       <p
         className={cn(
           "text-secondary text-md font-medium leading-8",
@@ -36,7 +37,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
         dangerouslySetInnerHTML={{
           __html: description.replace(/\n/g, "<br/>"),
         }}
-      ></p>
+      />
     </div>
   );
 };
