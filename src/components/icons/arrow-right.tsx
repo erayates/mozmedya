@@ -101,3 +101,21 @@ export function ArrowRightRound({ ...props }: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function ArrowUpRight({ ...props }: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10.586 1.99988H6.0001V-0.00012207H14.0001V7.99988H12.0001V3.4142L1.41421 14.0001L0 12.5858L10.586 1.99988Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}

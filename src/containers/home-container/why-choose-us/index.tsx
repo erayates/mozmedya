@@ -1,9 +1,9 @@
-import { Elements } from "@/app/components/icons/elements";
+import { Elements } from "@/components/icons/elements";
 import { chooseCards, IChooseCard } from "./config";
-import { cn } from "@/app/lib/utils";
-import SectionHeader from "@/app/components/section-header";
-import { Reveal } from "@/app/components/motion/reveal";
-import { Grow } from "@/app/components/motion/grow";
+import { cn } from "@/lib/utils";
+import SectionHeader from "@/components/section-header";
+import { Reveal } from "@/components/motion/reveal";
+import { Grow } from "@/components/motion/grow";
 
 const WhyChooseUs: React.FC = () => {
   return (

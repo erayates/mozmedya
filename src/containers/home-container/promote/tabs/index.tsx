@@ -1,9 +1,9 @@
 "use client";
 
-import { Layers } from "@/app/components/icons/layers";
-import { SmartPhone } from "@/app/components/icons/smart-phone";
-import { Speed } from "@/app/components/icons/speed";
-import { cn } from "@/app/lib/utils";
+import { Layers } from "@/components/icons/layers";
+import { Speed } from "@/components/icons/speed";
+import { SmartPhone } from "@/components/icons/smart-phone";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";

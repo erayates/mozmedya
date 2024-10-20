@@ -8,8 +8,8 @@ import SectionHeader from "../../section-header";
 const Footer: React.FC = () => {
   return (
     <React.Fragment>
-      <div className="bg-textGradient h-1 w-full mt-44"></div>
-      <footer className="w-full bg-white">
+      <div className="bg-textGradient h-1 w-full"></div>
+      <footer className="w-full bg-white border">
         <div className="max-w-screen-xl mx-auto">
           {/* Footer Top */}
           <div className="flex relative border-b border-b-ghost justify-between items-center py-20">

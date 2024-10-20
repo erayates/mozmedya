@@ -1,13 +1,12 @@
-import { Elements } from "@/app/components/icons/elements";
+import { Elements } from "@/components/icons/elements";
 import Tabs from "./tabs";
-import { MozIcon } from "@/app/components/icons/moz";
-import SectionHeader from "@/app/components/section-header";
-import { cn } from "@/app/lib/utils";
+import { MozIcon } from "@/components/icons/moz";
+import SectionHeader from "@/components/section-header";
+import { cn } from "@/lib/utils";
 import { IPromoteCard, promoteCards } from "./config";
 import Link from "next/link";
-
-import { Reveal } from "@/app/components/motion/reveal";
-import { Grow } from "@/app/components/motion/grow";
+import { Reveal } from "@/components/motion/reveal";
+import { Grow } from "@/components/motion/grow";
 
 const Promote: React.FC = () => {
   return (

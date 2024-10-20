@@ -40,7 +40,10 @@ export const footerLinks: IFooterSection = {
   ],
 };
 
-export const socialLinks: { href: string; icon: React.ReactNode }[] = [
+export const socialLinks: {
+  href: string;
+  icon: React.ReactNode;
+}[] = [
   {
     href: "#",
     icon: <Facebook />,

@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/containers/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -22,6 +23,7 @@ const config: Config = {
         accent: "var(--accent)",
         "light-grey": "var-(--light-grey)",
         cream: "var(--cream)",
+        blue: "var(--blue)",
       },
       backgroundImage: {
         bgGradient: "linear-gradient(180deg, #F5F7FA 0%, #FFFFFF 100%)",
@@ -42,10 +44,14 @@ const config: Config = {
         whiteGradient:
           "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 70.81%)",
         promoteTabEffect: "url('/assets/images/promote/bg-effect.png')",
+        referencesHeroShape: "url('/assets/images/references-hero-shape.svg')",
+        contactHeroShape: "url('/assets/images/contact-hero-shape.svg')",
       },
       boxShadow: {
         "promote-cards":
           "0px 32px 120px 0px #143B810A, 0px 6px 56px 0px #143B810A",
+        "reference-card":
+          "0px 32px 80px 0px #143B811A, 0px 6px 24px 0px #143B811A",
       },
       fontSize: {
         xs: "14px",

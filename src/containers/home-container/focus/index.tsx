@@ -1,12 +1,12 @@
-import { Elements, ElementsWhite } from "@/app/components/icons/elements";
-import { Grow } from "@/app/components/motion/grow";
-import { Reveal } from "@/app/components/motion/reveal";
-import SectionHeader from "@/app/components/section-header";
+import { Elements, ElementsWhite } from "@/components/icons/elements";
+import { Grow } from "@/components/motion/grow";
+import { Reveal } from "@/components/motion/reveal";
+import SectionHeader from "@/components/section-header";
 import Image from "next/image";
 
 const Focus: React.FC = () => {
   return (
-    <section id="focus" className="max-w-screen-xl mx-auto mt-[120px]">
+    <section id="focus" className="max-w-screen-xl mx-auto mt-[120px] mb-48">
       <Reveal axis="x">
         <div className="space-y-12">
           <SectionHeader

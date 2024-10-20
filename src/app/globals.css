@@ -12,6 +12,7 @@
   --light-accent: #EDF1F8;
   --light-grey: #D9D9D9;
   --cream: #F5F7FA;
+  --blue: #1179FC;
 }
 
 body {
@@ -28,6 +29,10 @@ body {
 
 .text-gradient{
   @apply bg-textGradient text-transparent bg-clip-text
+}
+
+.container-auto {
+  @apply max-w-screen-xl mx-auto px-4 xl:px-0
 }
 
 

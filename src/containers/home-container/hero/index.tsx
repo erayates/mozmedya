@@ -1,10 +1,11 @@
-import { Check } from "@/app/components/icons/check";
-import MotionText from "@/app/components/motion/text";
+import { Check } from "@/components/icons/check";
+import MotionText from "@/components/motion/text";
 import Image from "next/image";
 
-import { WeatherShape } from "@/app/components/shapes/weather";
-import { CurrienciesShape } from "@/app/components/shapes/currencies";
-import { MotionDiv } from "@/app/components/motion/div";
+import { WeatherShape } from "@/components/shapes/weather";
+import { CurrienciesShape } from "@/components/shapes/currencies";
+import { MotionDiv } from "@/components/motion/div";
+
 import React from "react";
 
 const Hero: React.FC = () => {
