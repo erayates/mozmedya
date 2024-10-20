@@ -24,6 +24,7 @@ const config: Config = {
         "light-grey": "var-(--light-grey)",
         cream: "var(--cream)",
         blue: "var(--blue)",
+        "dark-cream": "var(--dark-cream)",
       },
       backgroundImage: {
         bgGradient: "linear-gradient(180deg, #F5F7FA 0%, #FFFFFF 100%)",

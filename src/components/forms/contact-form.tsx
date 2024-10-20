@@ -5,6 +5,7 @@ import { useForm, FormProvider, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import Input from "../ui/input";
 import Textarea from "../ui/textarea";
+import { Mail, Phone, User, Website } from "../icons/form";
 
 const schema = z.object({
   fullname: z
@@ -40,10 +41,14 @@ const ContactForm = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)} className="space-y-6">
-        <Input placeholder="İsim Soyisim" name="fullname" />
-        <Input placeholder="E-Posta Adresiniz" name="email" />
-        <Input placeholder="Telefon Numaranız" name="phone" />
-        <Input placeholder="Web site adresiniz" name="website" />
+        <Input placeholder="İsim Soyisim" name="fullname" icon={<User />} />
+        <Input placeholder="E-Posta Adresiniz" name="email" icon={<Mail />} />
+        <Input placeholder="Telefon Numaranız" name="phone" icon={<Phone />} />
+        <Input
+          placeholder="Web site adresiniz"
+          name="website"
+          icon={<Website />}
+        />
         <Textarea placeholder="Mesajınız" name="message" />
 
         <button

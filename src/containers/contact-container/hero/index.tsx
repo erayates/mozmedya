@@ -107,7 +107,7 @@ const ContactHero: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-cream p-8 rounded-3xl">
+          <div className="bg-dark-cream p-8 rounded-3xl">
             <ContactForm />
           </div>
         </div>

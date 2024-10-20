@@ -37,10 +37,10 @@ const Header: React.FC = () => {
         </p>
         <Link
           href="#"
-          className="bg-titleGradient text-transparent bg-clip-text font-semibold flex items-center space-x-1"
+          className="bg-titleGradient text-transparent bg-clip-text font-semibold flex items-center space-x-1 group"
         >
           <span>Talebinizi İletin</span>
-          <ArrowRight />
+          <ArrowRight className="group-hover:translate-x-2 group-hover:duration-300 group-hover:transition-transform duration-300 transition-transform" />
         </Link>
       </div>
 
@@ -58,19 +58,19 @@ const Header: React.FC = () => {
         <nav>
           <ul className="flex">
             {navLinks.map((navLink: INavLinkItem, _idx: number) => (
-              <Link href={navLink.href} key={_idx}>
-                <li className="px-4 py-3 rounded-2xl hover:bg-buttonHoverGradient group transition-all duration-300">
+              <li className="px-4 py-3 rounded-2xl hover:bg-buttonHoverGradient group transition-all duration-300">
+                <Link href={navLink.href} key={_idx}>
                   <span className="text-primary-light font-medium text-sm group-hover:bg-titleGradient group-hover:text-transparent group-hover:bg-clip-text transition-all duration-300">
                     {navLink.label}
                   </span>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </nav>
-        <button className="bg-buttonGradient px-4 py-3 rounded-2xl flex space-x-2">
+        <button className="bg-buttonGradient px-4 py-3 rounded-2xl flex space-x-2 group hover:scale-105 hover-animate">
           <span className="text-white font-normal">Ücretsiz Deneyin</span>
-          <span className="bg-white w-6 h-6 rounded-full p-1 flex items-center justify-center">
+          <span className="bg-white w-6 h-6 rounded-full p-1 flex items-center justify-center group-hover-animate group-hover:translate-x-2">
             <ArrowRightRound />
           </span>
         </button>
