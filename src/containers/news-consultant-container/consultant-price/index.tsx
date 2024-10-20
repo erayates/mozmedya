@@ -29,22 +29,23 @@ const ConsultantPrice: React.FC = () => {
       className="w-full bg-titleGradientReverse min-h-[466px] h-[466px] mt-[150px] relative"
     >
       <div className="container-auto h-full grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="space-y-4 text-white flex flex-col justify-center">
-          <p className="leading-4 text-xs font-semibold">
+        <div className="space-y-4 text-white flex flex-col justify-center -top-10 relative">
+          <p className="leading-4 text-xs font-medium">
             HABER YAZILIMI DENEYİMİNİZİ YENİDEN TANIMLIYORUZ!
           </p>
           <h2 className="text-xl leading-[48px] font-semibold">
             Danışmanlık Ücret Başlığı
           </h2>
 
-          <p className="text-md leading-8 font-medium">
+          <p className="text-md leading-8 font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
             tellus odio. Vivamus a eros eget mi suscipit accumsan sit amet quis
             quam. Mauris non neque libero. Nam imperdiet enim in rutrum.
           </p>
         </div>
 
-        <div className="bg-white rounded-3xl -mt-[26px] shadow-reference-card px-6 pt-12 pb-11">
+        {/* Pricing Card */}
+        <div className="bg-white rounded-3xl shadow-reference-card -top-10 relative px-6 pt-12 pb-11">
           <div className="flex justify-between">
             <div className="space-y-2">
               <p className="text-md text-primary font-bold leading-6">
@@ -74,10 +75,14 @@ const ConsultantPrice: React.FC = () => {
 
             <div className="grid grid-cols-3 gap-x-8 gap-y-4">
               {features.map((feature, _idx) => (
-                <p className="text-xs font-bold text-primary flex">
-                  <CheckCircle />
-                  <span className="ml-2">{feature}</span>
-                </p>
+                <div className="flex space-x-2">
+                  <div className="w-5 h-5 grid place-items-center">
+                    <CheckCircle />
+                  </div>
+                  <p className="text-xs font-bold text-primary flex">
+                    {feature}
+                  </p>
+                </div>
               ))}
             </div>
 

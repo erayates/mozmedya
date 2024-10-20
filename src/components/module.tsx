@@ -6,7 +6,7 @@ interface ModuleProps {
   title: string;
   description: string;
   features: string[];
-  imageSource: string;
+//   imageSource: string;
   reverse?: boolean;
 }
 
@@ -14,7 +14,7 @@ export const Module: React.FC<ModuleProps> = ({
   title,
   description,
   features,
-  imageSource,
+//   imageSource,
   reverse,
 }) => {
   return (

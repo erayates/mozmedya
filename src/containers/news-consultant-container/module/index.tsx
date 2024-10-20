@@ -14,7 +14,7 @@ const NewsConsultantModule: React.FC = () => {
         title="Hizmet Adı"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus quis erat non fermentum. Maecenas erat mi, vehicula eget dui et, placerat commodo nunc. Cras justo nulla, cursus sit amet tincidunt non."
         features={features}
-        imageSource=""
+        // imageSource=""
       />
     </section>
   );
