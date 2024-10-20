@@ -98,6 +98,7 @@ const ContactHero: React.FC = () => {
               {socialLinks.map((link, _idx) => (
                 <Link
                   href={link.href}
+                  key={_idx}
                   className="w-12 h-12 bg-cream rounded-2xl grid place-items-center hover:bg-blue hover:text-white"
                 >
                   {link.icon}

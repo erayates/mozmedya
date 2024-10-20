@@ -30,9 +30,9 @@ const ContactForm = () => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data: any) => {
-    console.log(data);
-  };
+  // const onSubmit = (data: any) => {
+  //   console.log(data);
+  // };
 
   return (
     <FormProvider {...methods}>
