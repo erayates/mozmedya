@@ -132,7 +132,7 @@ export function Location() {
           y2="8.43077"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#07DEFD" />
+          <stop stopColor="#07DEFD" />
           <stop offset="1" stopColor="#1476FB" />
         </linearGradient>
         <linearGradient

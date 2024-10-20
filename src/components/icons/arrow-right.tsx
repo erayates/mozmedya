@@ -31,8 +31,8 @@ export function ArrowRight({ ...props }: React.SVGProps<SVGSVGElement>) {
           y2="8.37808"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#148DFB" />
-          <stop offset="1" stop-color="#002F88" />
+          <stop stopColor="#148DFB" />
+          <stop offset="1" stopColor="#002F88" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_286_8"
@@ -42,8 +42,8 @@ export function ArrowRight({ ...props }: React.SVGProps<SVGSVGElement>) {
           y2="3.12832"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#148DFB" />
-          <stop offset="1" stop-color="#002F88" />
+          <stop stopColor="#148DFB" />
+          <stop offset="1" stopColor="#002F88" />
         </linearGradient>
       </defs>
     </svg>
@@ -83,8 +83,8 @@ export function ArrowRightRound({ ...props }: React.SVGProps<SVGSVGElement>) {
           y2="7.34535"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#148DFB" />
-          <stop offset="1" stop-color="#002F88" />
+          <stop stopColor="#148DFB" />
+          <stop offset="1" stopColor="#002F88" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_286_651"
@@ -94,8 +94,8 @@ export function ArrowRightRound({ ...props }: React.SVGProps<SVGSVGElement>) {
           y2="3.08563"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#148DFB" />
-          <stop offset="1" stop-color="#002F88" />
+          <stop stopColor="#148DFB" />
+          <stop offset="1" stopColor="#002F88" />
         </linearGradient>
       </defs>
     </svg>
