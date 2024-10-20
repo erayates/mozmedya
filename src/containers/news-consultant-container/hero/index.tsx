@@ -1,4 +1,3 @@
-import SectionHeader from "@/components/section-header";
 import Link from "next/link";
 
 const NewsConsultantHero = () => {
