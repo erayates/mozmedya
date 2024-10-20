@@ -58,16 +58,13 @@ const Header: React.FC = () => {
         <nav>
           <ul className="flex">
             {navLinks.map((navLink: INavLinkItem, _idx: number) => (
-              <li
-                key={_idx}
-                className="px-4 py-3 rounded-2xl hover:bg-buttonHoverGradient group transition-all duration-300"
-              >
-                <Link href={navLink.href}>
+              <Link href={navLink.href} key={_idx}>
+                <li className="px-4 py-3 rounded-2xl hover:bg-buttonHoverGradient group transition-all duration-300">
                   <span className="text-primary-light font-medium text-sm group-hover:bg-titleGradient group-hover:text-transparent group-hover:bg-clip-text transition-all duration-300">
                     {navLink.label}
                   </span>
-                </Link>
-              </li>
+                </li>
+              </Link>
             ))}
           </ul>
         </nav>

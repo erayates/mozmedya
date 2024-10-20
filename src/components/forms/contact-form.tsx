@@ -41,7 +41,7 @@ const ContactForm = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)} className="space-y-6">
-        <Input placeholder="İsim Soyisim" name="fullname" icon={<User />} />
+        <Input placeholder="Adınız Soyadınız" name="fullname" icon={<User />} />
         <Input placeholder="E-Posta Adresiniz" name="email" icon={<Mail />} />
         <Input placeholder="Telefon Numaranız" name="phone" icon={<Phone />} />
         <Input

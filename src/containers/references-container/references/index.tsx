@@ -86,7 +86,7 @@ const ReferencesSection: React.FC = () => {
               href={reference.href}
               key={_idx}
               target="_blank"
-              className="border border-ghost rounded-3xl cursor-pointer p-8 hover:shadow-reference-card hover:border-blue hover:border-2 group space-y-8 transition-colors duration-300 hover:transition-colors hover:duration-300"
+              className="border border-ghost rounded-3xl cursor-pointer group p-8 hover:shadow-reference-card hover:border-blue hover:border-2 group space-y-8 transition-colors duration-300 hover:transition-colors hover:duration-300"
             >
               <div className="w-[85px] h-[30px] relative">
                 <Image
@@ -95,7 +95,7 @@ const ReferencesSection: React.FC = () => {
                   height={0}
                   alt="TRT Logo"
                   sizes="100vw"
-                  className="w-full h-auto text-amber-600"
+                  className="w-full h-auto text-amber-600 grayscale group-hover:grayscale-0 group-hover-animate"
                 />
               </div>
               <div className="flex justify-between items-center">
