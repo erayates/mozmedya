@@ -53,7 +53,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="py-3 bg-blue text-center w-full text-[12px] font-medium text-white leading-6 rounded-2xl"
+          className="py-3 bg-blue text-center w-full text-xs font-medium text-white leading-6 rounded-2xl"
         >
           Mesajınızı Gönderin
         </button>
