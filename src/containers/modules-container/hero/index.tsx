@@ -20,7 +20,7 @@ const ModulesHero: React.FC = () => {
           </p>
 
           <button className="py-4 px-6 bg-buttonGradient text-sm font-medium rounded-[100px] mt-8">
-            MozHaber v1'e Göz At
+            {`MozHaber v1'e Göz At`}
           </button>
         </div>
       </div>

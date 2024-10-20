@@ -6,7 +6,7 @@ interface ModuleProps {
   title: string;
   description: string;
   features: string[];
-//   imageSource: string;
+  //   imageSource: string;
   reverse?: boolean;
 }
 
@@ -14,7 +14,7 @@ export const Module: React.FC<ModuleProps> = ({
   title,
   description,
   features,
-//   imageSource,
+  //   imageSource,
   reverse,
 }) => {
   return (
@@ -43,7 +43,7 @@ export const Module: React.FC<ModuleProps> = ({
 
         <div className="space-y-4">
           {features.map((feature, _idx) => (
-            <div className="space-x-2 flex items-center">
+            <div className="space-x-2 flex items-center" key={_idx}>
               <div className="w-5 h-5 grid place-items-center">
                 <CheckCircleGradient />
               </div>

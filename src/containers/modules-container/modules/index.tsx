@@ -1,4 +1,3 @@
-import DemoForm from "@/components/forms/demo-form";
 import Module from "@/components/module";
 import SectionHeader from "@/components/section-header";
 import React from "react";
@@ -10,7 +9,7 @@ const ModulesSection: React.FC = () => {
         <SectionHeader
           subtitle="HABER YAZILIMI DENEYİMİNİZİ YENİDEN TANIMLIYORUZ!"
           title="Haber sitenizin sınırlarını zorlayın!"
-          description="Sadece haber değil, bir içerik devrimi! Yepyeni sistemimizle, içeriklerinizi üretmek artık daha kolay, daha hızlı ve daha verimli. <br/> Kaliteyi ve hızı aynı potada eriten tasarım ve yazılımımızla, içerik üretim sürecinizi baştan sona yeniden tanımlıyoruz."
+          description="Sadece haber değil, bir içerik devrimi! Yepyeni sistemimizle, içeriklerinizi üretmek artık daha kolay, daha hızlı ve daha verimli. Kaliteyi ve hızı aynı potada eriten tasarım ve yazılımımızla, içerik üretim sürecinizi baştan sona yeniden tanımlıyoruz."
           largeTitle={true}
         />
 

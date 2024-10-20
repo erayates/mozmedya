@@ -18,7 +18,6 @@ const Promote: React.FC = () => {
             subtitle="HABER YAZILIMI DENEYİMİNİZİ YENİDEN TANIMLIYORUZ!"
             description="Sadece haber değil, bir içerik devrimi! Yepyeni sistemimizle,
             içeriklerinizi üretmek artık daha kolay, daha hızlı ve daha verimli.
-            <br />
             Kaliteyi ve hızı aynı potada eriten tasarım ve yazılımımızla, içerik
             üretim sürecinizi baştan sona yeniden tanımlıyoruz."
             largeTitle={true}
@@ -33,7 +32,7 @@ const Promote: React.FC = () => {
             subtitle="HABER YAZILIMI DENEYİMİNİZİ YENİDEN TANIMLIYORUZ!"
             title="Tamamen işinize odaklanın, gerisinizi bize bırakın!"
             description="  Yenilenen alt yapı sayesinde, işinizdeki potansiyeli tam anlamıyla
-            keşfedin ve güncel kalmanın yanı sıra güvenli bir <br /> şekilde yol
+            keşfedin ve güncel kalmanın yanı sıra güvenli bir şekilde yol
             alın. Artık sadece işinize odaklanın, çünkü geliştirilmiş alt yapı
             sayesinde tüm detayları biz yönetiyoruz."
           />

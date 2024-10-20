@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                 <SectionHeader
                   subtitle="MOZMEDYA İLE TANIŞIN!"
                   title="Ücretsiz demo talebinizi oluşturun!"
-                  description="   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus sed massa tristique, luctus sem vel, tincidunt
                   risus. Sed scelerisque, sapien ac efficitur commodo."
                   className="text-left"

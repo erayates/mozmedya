@@ -17,7 +17,7 @@ const WhyChooseUs: React.FC = () => {
             title="Sizin için profesyonel çözümler üretiyoruz!"
             subtitle="NEDEN MOZMEDYA'YI TERCİH ETMELİSİNİZ?"
             description=" Yenilenen alt yapı sayesinde, işinizdeki potansiyeli tam anlamıyla
-            keşfedin ve güncel kalmanın yanı sıra güvenli bir <br /> şekilde yol
+            keşfedin ve güncel kalmanın yanı sıra güvenli bir şekilde yol
             alın. Artık sadece işinize odaklanın, çünkü geliştirilmiş alt yapı
             sayesinde tüm detayları biz yönetiyoruz."
           />

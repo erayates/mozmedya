@@ -1,5 +1,4 @@
 import { CheckCircle } from "@/components/icons/check";
-import Link from "next/link";
 
 const features = [
   "Ücretsiz Güncelleme",
@@ -76,7 +75,7 @@ const ConsultantPrice: React.FC = () => {
 
               <div className="grid grid-cols-3 gap-x-8 gap-y-4">
                 {features.map((feature, _idx) => (
-                  <div className="flex space-x-2">
+                  <div className="flex space-x-2" key={_idx}>
                     <div className="w-5 h-5 grid place-items-center">
                       <CheckCircle />
                     </div>

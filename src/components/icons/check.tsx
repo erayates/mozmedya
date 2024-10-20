@@ -26,6 +26,7 @@ export function CheckCircle({ ...props }: React.SVGProps<SVGSVGElement>) {
       viewBox="0 0 16 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <g clipPath="url(#clip0_150_4370)">
         <path
