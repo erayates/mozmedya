@@ -28,7 +28,7 @@ const ContactHero: React.FC = () => {
         </div>
 
         {/* Contact Details */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:px-10">
           <div className="rounded-2xl p-8 bg-white">
             <PhoneCall />
             <h3 className="font-semibold text-primary leading-6 text-md mt-6">

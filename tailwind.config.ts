@@ -52,6 +52,7 @@ const config: Config = {
         contactHeroShape: "url('/assets/images/contact-hero-shape.svg')",
         newConsultantHero:
           "linear-gradient(0deg, rgba(20, 118, 251, 0) 0%, rgba(7, 222, 253, 0.2) 100%)",
+        modulesHeroBg: "url('/assets/images/modules-hero-bg.svg')",
 
         consultantPriceShape:
           "url('/assets/images/consultant-price-shape.svg')",
