@@ -1,6 +1,6 @@
 import NewsConsultantContainer from "@/containers/news-consultant-container";
 
-export const NewsConsultantPage = () => {
+const NewsConsultantPage = () => {
   return <NewsConsultantContainer />;
 };
 
