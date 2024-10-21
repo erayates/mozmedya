@@ -5,62 +5,62 @@ const features: { title: string; description: string }[] = [
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
   {
     title: "Gelişmiş Eklenti Sistemi",
     description:
-      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sedmassa tristique, luctus sem.",
+      "Lorem ipsum dolor sit amet, ectetur adipiscing elit. Phasellus sed massa tristique, luctus sem.",
   },
 ];
 
@@ -76,7 +76,7 @@ const ModulesFeatures: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-x-8 gap-y-10">
         {features.map((feature, _idx) => (
-          <div className="flex flex-col items-center" key={_idx}>
+          <div className="flex flex-col items-center px-6" key={_idx}>
             <div className="w-14 h-14 rounded-2xl bg-light-blue grid place-items-center">
               <Elements className="p-1" />
             </div>
