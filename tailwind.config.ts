@@ -62,6 +62,10 @@ const config: Config = {
           "0px 32px 120px 0px #143B810A, 0px 6px 56px 0px #143B810A",
         "reference-card":
           "0px 32px 80px 0px #143B811A, 0px 6px 24px 0px #143B811A",
+        "advantage-card":
+          "0px 32px 80px 0px rgba(20, 59, 129, 0.02),0px 6px 24px 0px rgba(20, 59, 129, 0.04)",
+
+        button: "0px 10px 48px 0px #0000000A",
       },
       fontSize: {
         xs: "14px",

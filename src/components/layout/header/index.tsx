@@ -10,7 +10,7 @@ interface INavLinkItem {
 
 const navLinks: INavLinkItem[] = [
   {
-    href: "/",
+    href: "/haber-yazilimi",
     label: "Haber Yazılımı",
   },
   {
