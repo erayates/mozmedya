@@ -29,7 +29,7 @@ const navLinks: INavLinkItem[] = [
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 left-0 z-50 bg-white shadow-xl">
+    <header className="sticky top-0 left-0 z-50 bg-white border-b border-ghost">
       <div className="max-w-screen-xl mx-auto flex items-center justify-center space-x-6 text-xs leading-8">
         <p className="text-primary font-medium">
           Özel ihtiyaçlarınız için özel çözümler: Sizin için yazılımı

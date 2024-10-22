@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <React.Fragment>
       <div className="bg-textGradient h-1 w-full"></div>
       <footer className="w-full bg-white border">
-        <div className="max-w-screen-xl mx-auto">
+        <div className="container-auto">
           {/* Footer Top */}
           <div className="flex relative border-b border-b-ghost justify-between items-center py-20">
             <div className="space-y-6 max-w-[663px]">
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            <div className="absolute -right-40 max-w-[721px] max-h-[541px]">
+            <div className="hidden lg:block absolute -right-40 max-w-[721px] max-h-[541px]">
               <Image
                 src="/assets/images/devices-mockup.png"
                 alt="Mozmedya Tüm Akıllı Cihazlarda"
