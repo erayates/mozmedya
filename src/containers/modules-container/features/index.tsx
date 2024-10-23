@@ -1,4 +1,5 @@
 import { Elements } from "@/components/icons/elements";
+import { Reveal } from "@/components/motion/reveal";
 import SectionHeader from "@/components/section-header";
 
 const features: { title: string; description: string }[] = [
@@ -76,17 +77,22 @@ const ModulesFeatures: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-x-8 gap-y-10">
         {features.map((feature, _idx) => (
-          <div className="flex flex-col items-center px-6" key={_idx}>
-            <div className="w-14 h-14 rounded-2xl bg-light-blue grid place-items-center">
-              <Elements className="p-1" />
+          <Reveal
+            axis={_idx % 2 === 0 ? "x" : "y"}
+            duration={1.25}
+          >
+            <div className="flex flex-col items-center px-6" key={_idx}>
+              <div className="w-14 h-14 rounded-2xl bg-light-blue grid place-items-center">
+                <Elements width={22} height={22} />
+              </div>
+              <h3 className="font-bold leading-6 text-md text-primary mt-4">
+                {feature.title}
+              </h3>
+              <p className="text-xs font-medium text-center leading-6 text-secondary mt-2">
+                {feature.description}
+              </p>
             </div>
-            <h3 className="font-bold leading-6 text-md text-primary mt-4">
-              {feature.title}
-            </h3>
-            <p className="text-xs font-medium text-center leading-6 text-secondary mt-2">
-              {feature.description}
-            </p>
-          </div>
+          </Reveal>
         ))}
       </div>
     </section>

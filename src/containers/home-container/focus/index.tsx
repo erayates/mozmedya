@@ -17,7 +17,7 @@ const Focus: React.FC = () => {
 
           <div className="grid grid-cols-4 gap-8">
             <Grow duration={0.5}>
-              <div className="flex flex-col items-center space-y-2 group text-center">
+              <div className="flex flex-col items-center space-y-2 group hover:border-b-[3px] hover:border-ghost text-center after:w-0 after:h-[3px] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:transition-all hover:after:duration-[2000ms] hover:after:bg-textGradient">
                 <div className="space-y-4 flex flex-col items-center">
                   <div className="bg-buttonHoverGradient group-hover:bg-textGradient rounded-2xl flex items-center justify-center w-12 h-12 p-3">
                     <Elements className="group-hover:hidden" />
@@ -32,13 +32,11 @@ const Focus: React.FC = () => {
                   Lorem ipsum dolor sit amet, ectetur elit. Phasellus sed massa
                   tristique, luctus sem.
                 </p>
-
-                <div className="bg-textGradient h-[3px] w-full opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"></div>
               </div>
             </Grow>
 
             <Grow duration={0.7}>
-              <div className="flex flex-col items-center space-y-2 group text-center">
+              <div className="flex flex-col items-center space-y-2 group hover:border-b-[3px] hover:border-ghost text-center after:w-0 after:h-[3px] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:transition-all hover:after:duration-[2000ms] hover:after:bg-textGradient">
                 <div className="space-y-4 flex flex-col items-center">
                   <div className="bg-buttonHoverGradient group-hover:bg-textGradient rounded-2xl flex items-center justify-center w-12 h-12 p-3">
                     <Elements className="group-hover:hidden" />
@@ -53,13 +51,11 @@ const Focus: React.FC = () => {
                   Lorem ipsum dolor sit amet, ectetur elit. Phasellus sed massa
                   tristique, luctus sem.
                 </p>
-
-                <div className="bg-textGradient h-[3px] w-full opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"></div>
               </div>
             </Grow>
 
             <Grow duration={1}>
-              <div className="flex flex-col items-center space-y-2 group text-center">
+              <div className="flex flex-col items-center space-y-2 group hover:border-b-[3px] hover:border-ghost text-center after:w-0 after:h-[3px] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:transition-all hover:after:duration-[2000ms] hover:after:bg-textGradient">
                 <div className="space-y-4 flex flex-col items-center">
                   <div className="bg-buttonHoverGradient group-hover:bg-textGradient rounded-2xl flex items-center justify-center w-12 h-12 p-3">
                     <Elements className="group-hover:hidden" />
@@ -74,13 +70,10 @@ const Focus: React.FC = () => {
                   Lorem ipsum dolor sit amet, ectetur elit. Phasellus sed massa
                   tristique, luctus sem.
                 </p>
-
-                <div className="bg-textGradient h-[3px] w-full opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"></div>
               </div>
             </Grow>
-
             <Grow duration={1.2}>
-              <div className="flex flex-col items-center space-y-2 group text-center">
+              <div className="flex flex-col items-center space-y-2 group hover:border-b-[3px] hover:border-ghost text-center after:w-0 after:h-[3px] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:w-full hover:after:transition-all hover:after:duration-[2000ms] hover:after:bg-textGradient">
                 <div className="space-y-4 flex flex-col items-center">
                   <div className="bg-buttonHoverGradient group-hover:bg-textGradient rounded-2xl flex items-center justify-center w-12 h-12 p-3">
                     <Elements className="group-hover:hidden" />
@@ -95,8 +88,6 @@ const Focus: React.FC = () => {
                   Lorem ipsum dolor sit amet, ectetur elit. Phasellus sed massa
                   tristique, luctus sem.
                 </p>
-
-                <div className="bg-textGradient h-[3px] w-full opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"></div>
               </div>
             </Grow>
           </div>

@@ -2,7 +2,7 @@ import SectionHeader from "@/components/section-header";
 
 const NewsFeatureFocus: React.FC = () => {
   return (
-    <section id="focus" className="mt-24 mb-[186px] container-auto">
+    <section id="genel-özellikler" className="mt-24 mb-[186px] container-auto">
       <SectionHeader
         subtitle="HABER YAZILIMI DENEYİMİNİZİ YENİDEN TANIMLIYORUZ!"
         title="Tamamen işinize odaklanın, gerisini bize bırakın!"

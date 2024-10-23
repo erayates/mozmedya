@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${beausiteClassic.className} antialiased bg-bgGradient`}
+        className={`${beausiteClassic.className} antialiased bg-bgGradient scroll-smooth`}
       >
         <Header />
         <main className="w-full h-full mx-auto">{children}</main>

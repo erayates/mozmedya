@@ -1,4 +1,7 @@
 import { CheckCircle } from "@/components/icons/check";
+import { Grow } from "@/components/motion/grow";
+import { Reveal } from "@/components/motion/reveal";
+import Link from "next/link";
 
 const features = [
   "Ücretsiz Güncelleme",
@@ -86,17 +89,19 @@ const ConsultantPrice: React.FC = () => {
                 ))}
               </div>
 
-              <button className="rounded-2xl bg-buttonGradient p-4 text-center text-xs text-white font-medium w-full leading-4">
+              <button className="rounded-2xl bg-buttonGradient p-4 text-center text-xs text-white font-medium w-full leading-4 transition-all duration-300 hover:duration-300 hover:transition-all hover:translate-y-2">
                 Hemen Satın Al
               </button>
 
               <p className="text-primary text-xs font-bold leading-4 text-center">
                 Seçili bankaların kartlarına 6 ve 12 ay taksit fırsatı!{" "}
-                <span className="text-gradient ml-2">Daha fazla bilgi al</span>
+                <Link href="#" className="text-gradient ml-2">
+                  Daha fazla bilgi al
+                </Link>
               </p>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
     </section>
   );

@@ -51,7 +51,7 @@ const features: { title: string; description: string }[] = [
 
 const NewsSoftwareFeatures: React.FC = () => {
   return (
-    <section id="features" className="container-auto my-24">
+    <section className="container-auto my-24">
       <SectionHeader
         subtitle="HABER YAZILIMI DENEYİMİNİZİ YENİDEN TANIMLIYORUZ!"
         title="Haber sitenizin sınırlarını zorlayın!"

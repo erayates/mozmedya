@@ -89,12 +89,12 @@ const Footer: React.FC = () => {
                 <p className="font-bold text-md text-primary">
                   Bize Ulaşın
                 </p>
-                <ul className="flex flex-col space-y-2 text-primary">
+                <ul className="flex flex-col space-y-2">
                   <li className="flex space-x-[6px] items-center">
                     <div className="w-5 h-5 mt-1">
                       <Phone />
                     </div>
-                    <span className="font-medium text-xs leading-8">
+                    <span className="font-medium text-primary-light text-xs leading-8">
                       +90 552 489 8277
                     </span>
                   </li>
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
                     <div className="w-5 h-5 mt-1">
                       <Mail />
                     </div>
-                    <span className="font-medium text-xs leading-8">
+                    <span className="font-medium text-xs leading-8 text-primary-light">
                       iletisim@mozmedya.com
                     </span>
                   </li>
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                     <div className="w-5 h-5 mt-2">
                       <Location />
                     </div>
-                    <span className="font-medium text-xs leading-8">
+                    <span className="font-medium text-xs leading-8 text-primary-light">
                       Balıkesir Üniversitesi Teknoloji Geliştirme Bölgesi -
                       Çağış Mah. Çağış BM Sk. No: 340/16 Ofis:32 Bigadiç /
                       Balıkesir
@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
                       <li key={index}>
                         <Link
                           href={link.href}
-                          className="font-medium text-xs leading-8"
+                          className="font-medium text-xs leading-8 text-primary-light"
                         >
                           {link.title}
                         </Link>

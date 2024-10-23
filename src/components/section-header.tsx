@@ -20,7 +20,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div
       className={cn(
-        "space-y-4 text-center mx-auto max-w-[1049px]",
+        "space-y-2 text-center mx-auto max-w-[1049px]",
         className && className
       )}
     >

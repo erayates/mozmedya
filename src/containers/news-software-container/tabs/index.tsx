@@ -1,3 +1,4 @@
+"use client";
 import {
   Layers,
   Panel,
@@ -7,13 +8,14 @@ import {
   Letter,
 } from "@/components/icons/news-tabs";
 
+
 const NewsSoftwareTabs: React.FC = () => {
   return (
-    <div className="border-t border-b border-ghost sticky top-0 left-0 bg-white">
-      <ul className="container-auto h-20 flex justify-center space-x-14 overflow-x-auto overflow-hidden">
+    <div className="border-t border-b h-20 border-ghost sticky  top-0 bg-white">
+      <ul className="container-auto h-full flex justify-center space-x-14 overflow-x-auto overflow-hidden">
         <li className="group h-full">
           <a
-            href="#cta-demo"
+            href="#teknik-özellikler"
             className="text-[15px] h-full flex items-center space-x-2 relative font-medium text-secondary after:absolute after:left-0 after:bottom-0 after:bg-textGradient after:w-0 after:h-[3px] hover:after:w-full hover:after:transition-all hover:after:duration-1000"
           >
             <span className="w-6 h-6 group-hover:text-blue group-hover-animation grid place-items-center">
@@ -27,7 +29,7 @@ const NewsSoftwareTabs: React.FC = () => {
 
         <li className="group h-full">
           <a
-            href="#cta-demo"
+            href="#genel-özellikler"
             className="text-[15px] h-full flex items-center space-x-2 relative font-medium text-secondary after:absolute after:left-0 after:bottom-0 after:bg-textGradient after:w-0 after:h-[3px] hover:after:w-full hover:after:transition-all hover:after:duration-1000"
           >
             <span className="w-6 h-6 group-hover:text-blue group-hover-animation grid place-items-center">

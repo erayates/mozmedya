@@ -9,11 +9,12 @@ import NewsSoftwareAdvantages from "./advantages";
 import NewsSoftwarePrice from "./price";
 import NewsSoftwareFAQ from "./faq";
 
+
 const NewsSoftwareContainer: React.FC = () => {
   return (
     <React.Fragment>
       <NewsSoftwareHero />
-      <div className="relative h-full">
+      <div className="relative overflow-auto">
         <NewsSoftwareTabs />
         <NewsSoftwareFeatures />
         <NewsFeatureFocus />

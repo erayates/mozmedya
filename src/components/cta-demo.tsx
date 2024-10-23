@@ -28,7 +28,7 @@ const CTADemo: React.FC = () => {
             </button>
           </div>
 
-          <div className="bg-white p-8 shadow-reference-card rounded-3xl relative -top-28">
+          <div className="bg-white p-8 shadow-reference-card rounded-3xl relative -top-28 md:ml-14 lg:ml-28">
             <DemoForm />
           </div>
         </div>

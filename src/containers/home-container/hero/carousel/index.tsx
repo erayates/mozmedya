@@ -1,3 +1,5 @@
+"use client";
+
 import { Check } from "@/components/icons/check";
 import MotionText from "@/components/motion/text";
 import Image from "next/image";
@@ -6,35 +8,239 @@ import { WeatherShape } from "@/components/shapes/weather";
 import { CurrienciesShape } from "@/components/shapes/currencies";
 import { MotionDiv } from "@/components/motion/div";
 
-import React from "react";
+import React, { useState } from "react";
 import { ArrowDown, ArrowUp } from "@/components/icons/arrows";
+import { cn } from "@/lib/utils";
+
+const carouselItems = [
+  {
+    subtitle: "MOZ HABER YAZILIMI V1",
+    title: "Haberlerin gücünü <br/> yeniden tanımlıyoruz!",
+    description:
+      "Haberler artık sadece bilgi akışı değil, aynı zamanda etkileme ve dönüştürme aracı haline geliyor. <br/> Moz Haber Yazılımı v1, güçlü araçları ve kullanıcı dostu arayüzüyle haber deneyiminizi zirveye taşıyor.",
+    renderImages: () => (
+      <div className="top-[25px] h-fit flex justify-center relative">
+        <MotionDiv duration={0.8}>
+          <div className="max-w-[1011px] max-h-[558px]">
+            <Image
+              src="/assets/images/hero/browser.png"
+              alt="Mozmedya Tüm Akıllı Cihazlarda"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto"
+            />
+          </div>
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.2}
+          className="absolute -left-[238px] -top-2 w-full h-full"
+        >
+          <WeatherShape />
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.5}
+          className="absolute -right-[238px] top-[73px]"
+        >
+          <CurrienciesShape />
+        </MotionDiv>
+      </div>
+    ),
+  },
+  {
+    subtitle: "MOZ HABER YAZILIMI V1",
+    title: "Mozedya ile haber sektöründe yükselişe geçin!",
+    description:
+      "Haberler artık sadece bilgi akışı değil, aynı zamanda etkileme ve dönüştürme aracı haline geliyor. <br/> Moz Haber Yazılımı v1, güçlü araçları ve kullanıcı dostu arayüzüyle haber deneyiminizi zirveye taşıyor.",
+    renderImages: () => (
+      <div className="top-[25px] h-fit flex justify-center relative">
+        <MotionDiv duration={0.8}>
+          <div className="max-w-[1011px] max-h-[558px]">
+            <Image
+              src="/assets/images/hero/browser.png"
+              alt="Mozmedya Tüm Akıllı Cihazlarda"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto"
+            />
+          </div>
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.2}
+          className="absolute -left-[238px] -top-2 w-full h-full"
+        >
+          <WeatherShape />
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.5}
+          className="absolute -right-[238px] top-[73px]"
+        >
+          <CurrienciesShape />
+        </MotionDiv>
+      </div>
+    ),
+  },
+
+  {
+    subtitle: "MOZ HABER YAZILIMI V1",
+    title: "Haberlerin gücünü <br/> yeniden tanımlıyoruz!",
+    description:
+      "Haberler artık sadece bilgi akışı değil, aynı zamanda etkileme ve dönüştürme aracı haline geliyor. <br/> Moz Haber Yazılımı v1, güçlü araçları ve kullanıcı dostu arayüzüyle haber deneyiminizi zirveye taşıyor.",
+    renderImages: () => (
+      <div className="top-[25px] h-fit flex justify-center relative">
+        <MotionDiv duration={0.8}>
+          <div className="max-w-[1011px] max-h-[558px]">
+            <Image
+              src="/assets/images/hero/browser.png"
+              alt="Mozmedya Tüm Akıllı Cihazlarda"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto"
+            />
+          </div>
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.2}
+          className="absolute -left-[238px] -top-2 w-full h-full"
+        >
+          <WeatherShape />
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.5}
+          className="absolute -right-[238px] top-[73px]"
+        >
+          <CurrienciesShape />
+        </MotionDiv>
+      </div>
+    ),
+  },
+
+  {
+    subtitle: "MOZ HABER YAZILIMI V1",
+    title: "Haberlerin gücünü <br/> yeniden tanımlıyoruz!",
+    description:
+      "Haberler artık sadece bilgi akışı değil, aynı zamanda etkileme ve dönüştürme aracı haline geliyor. <br/> Moz Haber Yazılımı v1, güçlü araçları ve kullanıcı dostu arayüzüyle haber deneyiminizi zirveye taşıyor.",
+    renderImages: () => (
+      <div className="top-[25px] h-fit flex justify-center relative">
+        <MotionDiv duration={0.8}>
+          <div className="max-w-[1011px] max-h-[558px]">
+            <Image
+              src="/assets/images/hero/browser.png"
+              alt="Mozmedya Tüm Akıllı Cihazlarda"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto"
+            />
+          </div>
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.2}
+          className="absolute -left-[238px] -top-2 w-full h-full"
+        >
+          <WeatherShape />
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.5}
+          className="absolute -right-[238px] top-[73px]"
+        >
+          <CurrienciesShape />
+        </MotionDiv>
+      </div>
+    ),
+  },
+
+  {
+    subtitle: "MOZ HABER YAZILIMI V1",
+    title: "Haberlerin gücünü <br/> yeniden tanımlıyoruz!",
+    description:
+      "Haberler artık sadece bilgi akışı değil, aynı zamanda etkileme ve dönüştürme aracı haline geliyor. <br/> Moz Haber Yazılımı v1, güçlü araçları ve kullanıcı dostu arayüzüyle haber deneyiminizi zirveye taşıyor.",
+    renderImages: () => (
+      <div className="top-[25px] h-fit flex justify-center relative">
+        <MotionDiv duration={0.8}>
+          <div className="max-w-[1011px] max-h-[558px]">
+            <Image
+              src="/assets/images/hero/browser.png"
+              alt="Mozmedya Tüm Akıllı Cihazlarda"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto"
+            />
+          </div>
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.2}
+          className="absolute -left-[238px] -top-2 w-full h-full"
+        >
+          <WeatherShape />
+        </MotionDiv>
+
+        <MotionDiv
+          duration={1.5}
+          className="absolute -right-[238px] top-[73px]"
+        >
+          <CurrienciesShape />
+        </MotionDiv>
+      </div>
+    ),
+  },
+];
 
 const HeroCarousel = () => {
+  const [currentCarouselItem, setCurrentCarouselItem] = useState<number>(0);
+
+  const handlePrev = () => {
+    currentCarouselItem === 0
+      ? setCurrentCarouselItem(carouselItems.length - 1)
+      : setCurrentCarouselItem((prev) => prev - 1);
+  };
+
+  const handleNext = () => {
+    currentCarouselItem === carouselItems.length - 1
+      ? setCurrentCarouselItem(0)
+      : setCurrentCarouselItem((prev) => prev + 1);
+  };
+
   return (
     <React.Fragment>
       <div className="flex justify-center z-30 relative">
-        <div className="max-w-3xl space-y-6">
-          <div className="text-center space-y-4 text-white">
-            <MotionText
-              as="p"
-              text="MOZ HABER YAZILIMI V1"
-              className="text-[14px] font-semibold"
-            />
-            <MotionText
-              as="h1"
-              text="Haberlerin gücünü <br/> yeniden tanımlıyoruz!"
-              className="font-semibold text-2xl leading-[48px]"
-            />
+        <div className="flex flex-col items-center space-y-6">
+          {carouselItems.map((item, _idx) => {
+            if (currentCarouselItem === _idx) {
+              return (
+                <div className="text-center space-y-4 text-white max-w-3xl">
+                  <MotionText
+                    as="p"
+                    text={item.subtitle}
+                    className="text-[14px] font-semibold"
+                  />
+                  <MotionText
+                    as="h1"
+                    text={item.title}
+                    className="font-semibold text-2xl leading-[48px]"
+                  />
 
-            <MotionText
-              as="p"
-              className="font-normal leading-7"
-              text="Haberler artık sadece bilgi akışı değil, aynı zamanda etkileme
-              ve dönüştürme aracı haline geliyor. <br/> Moz Haber Yazılımı
-              v1, güçlü araçları ve kullanıcı dostu arayüzüyle haber
-              deneyiminizi zirveye taşıyor."
-            />
-          </div>
+                  <MotionText
+                    as="p"
+                    className="font-normal leading-7"
+                    text={item.description}
+                  />
+                </div>
+              );
+            }
+          })}
 
           {/* Hero Buttons */}
           <div className="flex justify-center space-x-4 text-white z-20">
@@ -62,51 +268,50 @@ const HeroCarousel = () => {
               Zengin Tema Seçenekleri
             </p>
           </div>
-        </div>
 
-        {/* Navigate Carousel - Arrows */}
-        <div className="absolute right-16 top-1/2 -translate-y-1/2 w-5 space-y-2">
-          <div className="w-5 h-5 grid place-items-center">
-            <ArrowUp />
-          </div>
-          <div className="flex flex-col space-y-2 items-center">
-            <div className="w-[6px] h-[6px] rounded-full bg-white"></div>
-            <div className="w-[6px] h-[6px] rounded-full bg-white"></div>
-            <div className="w-[6px] h-[6px] rounded-full bg-white"></div>
-            <div className="w-[6px] h-[6px] rounded-full bg-white"></div>
-            <div className="w-[6px] h-[6px] rounded-full bg-white"></div>
-          </div>
-          <div className="w-5 h-5 grid place-items-center">
-            <ArrowDown />
-          </div>
+          {/* Hero Images */}
+          {carouselItems.map((item, _idx) => {
+            if (currentCarouselItem === _idx) {
+              return item.renderImages();
+            }
+          })}
         </div>
       </div>
 
-      {/* Hero Images */}
-      <div className="mt-[65px] h-fit flex justify-center relative">
-        <MotionDiv duration={0.8}>
-          <div className="max-w-[1011px] max-h-[558px]">
-            <Image
-              src="/assets/images/hero/browser.png"
-              alt="Mozmedya Tüm Akıllı Cihazlarda"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-auto"
-            />
-          </div>
-        </MotionDiv>
-
-        <MotionDiv
-          duration={1.2}
-          className="absolute -left-24 -top-2 w-full h-full"
+      {/* Navigate Carousel - Arrows */}
+      <div className="absolute right-16 top-[181px] -translate-y-1/2 w-5 space-y-2 z-30">
+        <button
+          className="w-5 h-5 grid place-items-center"
+          onClick={handlePrev}
         >
-          <WeatherShape />
-        </MotionDiv>
-
-        <MotionDiv duration={1.5} className="absolute -right-24 top-[73px]">
-          <CurrienciesShape />
-        </MotionDiv>
+          <ArrowUp />
+        </button>
+        <div className="flex flex-col space-y-2 items-center">
+          {Array.from({ length: 5 }).map((_, _idx) => (
+            <div
+              key={_idx}
+              className={cn(
+                "w-[6px] h-[6px] rounded-full bg-white transition-all duration-300 relative overflow-hidden",
+                _idx === currentCarouselItem && "h-12 bg-white/30"
+              )}
+            >
+              {currentCarouselItem === _idx && (
+                <div
+                  className={cn(
+                    "absolute -top-32 left-0 h-[30px] w-[6px] bg-white rounded-full transition-all duration-1000",
+                    currentCarouselItem === _idx && "top-0"
+                  )}
+                ></div>
+              )}
+            </div>
+          ))}
+        </div>
+        <button
+          className="w-5 h-5 grid place-items-center"
+          onClick={handleNext}
+        >
+          <ArrowDown />
+        </button>
       </div>
     </React.Fragment>
   );

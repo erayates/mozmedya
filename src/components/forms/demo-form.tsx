@@ -39,7 +39,7 @@ const DemoForm = () => {
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={methods.handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={methods.handleSubmit(onSubmit)} className="space-y-6 w-full">
         <Input placeholder="Adınız Soyadınız" name="fullname" />
         <Input placeholder="E-Posta Adresiniz" name="email" />
         <Input placeholder="Telefon Numaranız" name="phone" />

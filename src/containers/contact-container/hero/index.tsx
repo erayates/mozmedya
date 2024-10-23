@@ -11,7 +11,7 @@ const ContactHero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="bg-textGradient w-full min-h-[1181px] relative mb-[350px]"
+      className="bg-textGradient w-full min-h-[1181px] relative mb-[300px]"
     >
       <div className="container-auto relative top-[98px] z-20 flex flex-col items-center">
         <Reveal className="flex justify-center">
