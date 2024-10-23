@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { CheckCircleGradient } from "./icons/check";
 import { Elements } from "./icons/elements";
-import { Reveal } from "./motion/reveal";
 
 interface ModuleProps {
   title: string;

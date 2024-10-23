@@ -202,15 +202,19 @@ const HeroCarousel = () => {
   const [currentCarouselItem, setCurrentCarouselItem] = useState<number>(0);
 
   const handlePrev = () => {
-    currentCarouselItem === 0
-      ? setCurrentCarouselItem(carouselItems.length - 1)
-      : setCurrentCarouselItem((prev) => prev - 1);
+    if (currentCarouselItem === 0) {
+      setCurrentCarouselItem(carouselItems.length - 1);
+      return;
+    }
+    setCurrentCarouselItem((prev) => prev - 1);
   };
 
   const handleNext = () => {
-    currentCarouselItem === carouselItems.length - 1
-      ? setCurrentCarouselItem(0)
-      : setCurrentCarouselItem((prev) => prev + 1);
+    if (currentCarouselItem === carouselItems.length - 1) {
+      setCurrentCarouselItem(0);
+      return;
+    }
+    setCurrentCarouselItem((prev) => prev + 1);
   };
 
   return (
@@ -220,7 +224,10 @@ const HeroCarousel = () => {
           {carouselItems.map((item, _idx) => {
             if (currentCarouselItem === _idx) {
               return (
-                <div className="text-center space-y-4 text-white max-w-3xl">
+                <div
+                  className="text-center space-y-4 text-white max-w-3xl"
+                  key={_idx}
+                >
                   <MotionText
                     as="p"
                     text={item.subtitle}
@@ -274,6 +281,7 @@ const HeroCarousel = () => {
             if (currentCarouselItem === _idx) {
               return item.renderImages();
             }
+            return null;
           })}
         </div>
       </div>

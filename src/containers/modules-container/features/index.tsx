@@ -77,10 +77,7 @@ const ModulesFeatures: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-x-8 gap-y-10">
         {features.map((feature, _idx) => (
-          <Reveal
-            axis={_idx % 2 === 0 ? "x" : "y"}
-            duration={1.25}
-          >
+          <Reveal axis={_idx % 2 === 0 ? "x" : "y"} duration={1.25} key={_idx}>
             <div className="flex flex-col items-center px-6" key={_idx}>
               <div className="w-14 h-14 rounded-2xl bg-light-blue grid place-items-center">
                 <Elements width={22} height={22} />

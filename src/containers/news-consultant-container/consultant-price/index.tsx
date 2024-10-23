@@ -1,6 +1,4 @@
 import { CheckCircle } from "@/components/icons/check";
-import { Grow } from "@/components/motion/grow";
-import { Reveal } from "@/components/motion/reveal";
 import Link from "next/link";
 
 const features = [
