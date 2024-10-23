@@ -6,7 +6,7 @@ const CTADemo: React.FC = () => {
       id="cta-demo"
       className="w-full bg-titleGradientReverse min-h-[392px] h-[392px] relative"
     >
-      <div className="absolute w-full h-full left-0 top-0 z-0 min-h-[388px] bg-consultantPriceShape bg-bottom">
+      <div className="absolute w-full h-full left-0 top-0 z-0 min-h-[388px] bg-consultantPriceShape animate-bg-move">
         <div className="container-auto h-full grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="text-white flex flex-col justify-center -top-20 relative max-w-[604px]">
             <p className="text-xs leading-4 font-semibold">

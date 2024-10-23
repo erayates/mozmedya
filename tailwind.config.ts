@@ -9,6 +9,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+          moveBackground: {
+            '0%': { backgroundPosition: '50% 100%' },
+            '50%': { backgroundPosition: '200% 100%' },
+            '100%': { backgroundPosition: '50% 100%' },
+          },
+      },
+      animation: {
+        'bg-move': 'moveBackground 10s ease-in-out infinite',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
